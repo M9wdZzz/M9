@@ -1,0 +1,17 @@
+import smtplib
+
+
+sender_mail = input("fiatwww31@gmail.com")
+target_mail = input("fiatwww31@gmail.com")
+
+sender_password = input("please Enter You Password": )
+
+server = smtplib.SMTP("smtp.google.com", 587)
+server.starttls()
+server.login(sender_mail, sender_password)
+
+print("Loged in Successfully")
+
+server.sendmail(sender_mail, target_mail, "This is my first Keylogger 'mailer' ")
+
+print("[+] Message sent Successfully")
